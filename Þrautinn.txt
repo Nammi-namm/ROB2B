@@ -1,7 +1,0 @@
-Hugmynd af verkefni sem róbót á að gere er í 5 hlutum
-
-1) Fyrsta verkefnið er að hann keyrir beint og þarf að keyra yfir hyndrun sem gæti verið vatn eða eitthvað sem róbótinn þarf að fara yfir
-2) Annað verkefnið þarf að finna glass af vatni og þarf hann að hella vatnið í annað glass. Eins skonar þjónn.
-3) Þriðja verkefnið er að þurfa að fara niður x cm langt niður sem myndi vera eins skonar trappa.
-4) Fjórða verkefnið er að sækja bolta. Annað hvort að halda honum í ákveðna hæð eða setja hann þar sem catipult er.
-5) Fimmta verkefnið er að setja boltan í gat á enda þrautarinnar og þarf róbótinn að keyra þangað að eða nota catipult að skjóta í körfu.
