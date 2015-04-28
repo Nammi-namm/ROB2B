@@ -1,0 +1,53 @@
+20.1.2015 Skrifaði hugmynd í visual skjali, teiknaði þar og setti texta sem segir hvað á að gera á viðkomandi stöðum. Einnig kikti ég og breyti dagsetningum í timsketch og perthrit.
+
+27.1.2015 Kláraði grunnhugmynd af því sem hann á að gera sem sagt athafna sig í visual skjali. Einnig setti ég fram grunn að void og task með engu inn í sem gæti verið nytsamlegt 
+til áframhald þegar við förum að kóða eða það að segja t.d (void motorsOff() og task moveLeft() ). Var að byrja smá að hugsa með uppsetningu róbótsins
+
+03.2.2015 Fórum að smíða grind á róbótnum. Einnig fór ég að finna fleiri forritunarskipanir fyrir void og task aðferðir
+
+09.2.2015 Fylgldist með uppbyggingu grindarinnar á róbótinum
+
+10.2.2015 Var í kóðun en vantaði robot C til þess að athuga hvernig það funkerar
+
+16.2.2015 Fór í aðra tölvu sem ég vissi að RobotC er til staðar og fór að púsla saman snúrunum og velini saman. Það sem er að að Benni var eitthvað 
+tregur að ég myndi tengja mótor við og rökinn sem hann kom með er að það myndi ekki vera sama rásin og ég myndi nota og hann ætti trúlega kóða 
+fyrir verkefnið.
+
+Ég bara spyr afhverju er ég að mæta ef ég hef ekkert að gera. Finnst þetta vera waist of time 
+
+17.2.2015 Ég gerði meira af koðanum núna þarf að prófa hann. Það þýðir að tengja einhverja mótóra við vélina og þaðan við tölvu. 
+Það gengur ágættlega að setja upp þessa grind, 
+en ég veit ekki hvort grindin hans virkar yfirleitt
+
+23.2.2015 Var í vandræðum með update
+
+24.2.2015 Var í vandræðum með update
+
+2.3.2015 Update fyrir fjarsteringuna er lokið. Vorum að byrja að huga að forrita. Ég vill að það verði kóðað bæði fyrir joystic og manual en 
+Benni vill að það verði einungis kóðað fyrir joystick.
+
+3.3.2015 Prufuðum að kóða fyrir joystic og virkaði fyrir dekkinn. Vandamál með dekkinn samt sem áður sem hann lagaði en ég sé smá erfiðleika í róbotinn
+sen varðar beltið og að hækka og lækka, svokallaður öxull gæti flækst inn í málið
+
+24.3.2015 Loksins fékk ég að kóða þannig ég get séð hvort og hvernig kóðarnir virka. ég fék Farward til þess að virka og var hann þokkalega beinn.
+Backward var með snúning á sér og er að leiða til vinstri þaðan sem ég sit. Einnig gerði ég TurnLeft90°C og TurnRight90°C og einnig Backwards á þeim
+
+Það sem ég á eftir að gera er að fínpússa miða við þennan róbót þannig að hann verður sem beinast, en að mestu leiti er þetta komið það sem ég hef gert
+að undanfarinni misserum í áfanga þangað til. 
+
+Mér langar að viðurkenna að þessi önn hefur farið út úr þúfur. Hann með sinn skriðdreka. En ég hef ekki hugmynd um hvernig á að koma uppörmunum þannig 
+að róbotinn getur farið niður og upp stiga, út frá beltinu. Trúlega þarf ég að gera það í Háskólanum. Sem sagt hugmyndinn um verkefnið er kabút eins
+og ég get orðað það. Hugmyndinn var ekki, EKKI með skriðdrekabelti og ekki EKKI svona stór og klunalegur.
+
+Núna er að koma klóni fyrir á réttri hæð fyrir 0.3 l gosdós. Gangi Benna vel, því að það sem fer upp og niður draslið sem er fyrir beltið er að mínu 
+mati búið
+
+13.4.2015 Var að reyna að fá arminn til þess að virka. En það virðist að mótorinn fyrir arminn er bilaður/ónýttur
+
+14.4.2015 Skiptum um mótor og allt virkar, leyfði Benna að nota fjarsteringuna og coda smá.
+
+20.4.2015 Mæti seint út af Kolbrún vildi tala við mig og fleiri út af lokaverkefni. Leyfði Benna að coda meira fyrir fjarsteringuna.
+
+21.4.2015 Var að reyna að vekja Benna til umhugsunar að tímin er naumur við að gera verkefnið sem ég kom með. Ég stytti verkefnið eins og ástandið er
+í dag og byrjaði að gera Hönnunarskýrsluna. Benni er alltaf að tala um hversu þreyttur hann er. Hann má eiga það inni að hann setur saman róbotinn en 
+hann er stór, þungur og umfangsmikill. 
