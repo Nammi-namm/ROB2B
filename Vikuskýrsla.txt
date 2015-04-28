@@ -1,0 +1,6 @@
+20.1.2015 Skrifaði hugmynd í visual skjali, teiknaði þar og setti texta sem segir hvað á að gera á viðkomandi stöðum. Einnig kikti ég og breyti dagsetningum í timsketch og perthrit.
+
+27.1.2015 Kláraði grunnhugmynd af því sem hann á að gera sem sagt athafna sig í visual skjali. Einnig setti ég fram grunn að void og task með engu inn í sem gæti verið nytsamlegt 
+til áframhald þegar við förum að kóða eða það að segja t.d (void motorsOff() og task moveLeft() ). Var að byrja smá að hugsa með uppsetningu róbótsins
+
+27.4.2015 Gerdum uppsetninguna for the claw, med controller, clarudum kloinn thannig ad hun er a og virkar. allt hardware a ad vera buid. gerdum sma software fyrir thetta allt og tharf bara ad finpussa thad.
