@@ -52,4 +52,12 @@ mati búið
 í dag og byrjaði að gera Hönnunarskýrsluna. Benni er alltaf að tala um hversu þreyttur hann er. Hann má eiga það inni að hann setur saman róbotinn en 
 hann er stór, þungur og umfangsmikill. 
 
+Benni her, helst a ekki ad seta personu upplysingar i svona text skjal. Efasamt um ad eg leifdi Bjarni ad koda og var til stadar ef hann thurfti hjalp. Thad er ekki mer ad kenna ef thad er aldrei kallad i mig. Vid endudum ad tala um thetta og a thessum degi var unnid heil mikid i ad seta kloin a robotinn. Sama hvad var sagt fyrir ofan var meira gert i thessum tima en nokkud annar sidustu 2-3 vikurnar.
+
 27.4.2015 Gerdum uppsetninguna for the claw, med controller, clarudum kloinn thannig ad hun er a og virkar. allt hardware a ad vera buid. gerdum sma software fyrir thetta allt og tharf bara ad finpussa thad.
+
+28.4.2015 Klarudum uppsetninguna a thessu ollu. Fullbuid kodi, fullbuid robot sem sagt.
+
+Eins og er keyrir robotinn afram og getur farid og nad i upp ad 1L flosku, vid holdum ad thad getur tekid 2L flosku en vid erum ekki viss. Eftir ad hafa tekid up floskuna bakkar robotinn, og snir og heldur afram.
+
+Finnst eg Benedikt var adalega i ad seta saman robotin yfir onnina, thad fanst okkur best ad Bjarni gerdi vikuskyrsluna. Svona var thetta gert.
