@@ -22,7 +22,89 @@
 |*    Motor - Port 2          rightMotor           VEX Motor           Right motor                    *|
 |*    Motor - Port 3          leftMotor            VEX Motor           Left motor                     *|
 \*----------------------------------------------------------------------------------------------------*/
+//+++++++++++++++++++++++++++++++++++++++++++++| VOID FUNCTIONS |+++++++++++++++++++++++++++++++++++++++++++++++
+void forward() {
+  		// forward
+		motor[rightMotor] = 32;
+		motor[leftMotor] = 30;
+		wait1Msec(800);
 
+		motor[rightMotor] = 0;
+		motor[leftMotor] = 0;
+}
+
+void turnleft90() {
+	  // turns 90 degrees left
+		motor[rightMotor] = 50;
+		motor[leftMotor] = -50;
+		wait1Msec(2800);
+
+		motor[rightMotor] = 0;
+		motor[leftMotor] = 0;
+}
+void turnright90() {
+		// turns right 90 degrees
+		motor[rightMotor] = -50;
+		motor[leftMotor] = 50;
+		wait1Msec(2600);
+
+		motor[rightMotor] = 0;
+		motor[leftMotor] = 0;
+}
+void reverse () {
+	  // reverses
+		motor[leftMotor] = -30;
+		motor[rightMotor] = -32;
+		wait1Msec(800);
+
+		motor[leftMotor] = 0;
+		motor[rightMotor] = 0;
+}
+void liftclaw () {
+  	// lifts claw
+		motor(liftRightMotor) = 34;
+  	motor(liftLeftMotor) = 34;
+  	wait1Msec(500);
+
+  	// stop lifting claw
+  	motor(liftRightMotor) = 0;
+  	motor(liftLeftMotor) = 0;
+}
+void lowerclaw() {
+		// lower clow
+		motor(liftRightMotor) = -18;
+  	motor(liftLeftMotor) = -18;
+  	wait1Msec (500);
+
+  	motor(liftRightMotor) = 0;
+  	motor(liftLeftMotor) = 0;
+}
+void openclaw() {
+	// open clow
+  	motor (claw) = -30;
+		wait1Msec(1000);
+
+		motor (claw) = 0;
+}
+void closeclaw() {
+	// Close Clow
+  	motor (claw) = 30;
+		wait1Msec(1000);
+
+		motor (claw) = 0;
+}
+void finish() {
+		motor[rightMotor] = 0;
+		motor[leftMotor] = 0;
+		motor(liftRightMotor) = 0;
+  	motor(liftLeftMotor) = 0;
+  	motor (claw) = 0;
+}
+void clawstop(){
+		motor (claw) = 0;
+	  motor (liftRightMotor) = 0;
+	  motor (liftLeftMotor) = 0;
+}
 //+++++++++++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++++++++++++
 task main ()
 {
@@ -30,54 +112,33 @@ task main ()
 
   while(1 == 1)
   {
-
-    if (vexRT[Btn7U] == 1) { // klo upp
-    	motor(liftRightMotor) = 34;
-    	motor(liftLeftMotor) = 34;
+    if (vexRT[Btn7U] == 1) { // claw up
+    	liftclaw();
     }
-		else if (vexRT[Btn7D] == 1) { // klo nidur
-    	motor(liftRightMotor) = -18;
-    	motor(liftLeftMotor) = -18;
+		else if (vexRT[Btn7D] == 1) { // claw down
+    	lowerclaw();
     }
-		else if (vexRT[Btn7R] == 1) { //klo saman
-    	motor(claw) = 30;
+		else if (vexRT[Btn7R] == 1) { // close claw
+    	closeclaw();
     }
-    else if (vexRT[Btn7L] == 1) { // klo i sundur
-    	motor(claw) = -30;
+    else if (vexRT[Btn7L] == 1) { // open claw
+    	openclaw();
     }
-    else {
-    	motor (claw) = 0;
-    	motor (liftRightMotor) = 0;
-    	motor (liftLeftMotor) = 0;
+    else { // all them zeros if the above is not used.
+  		clawstop();
   	}
 
-    if (vexRT[Btn8U] == 1 && i == 0) { // forwards short
-    	motor[rightMotor] = 40;
-			motor[leftMotor]  = 40;
-			wait1Msec(700);
-			motor[rightMotor] = 0;
-    	motor [leftMotor] = 0;
+    if (vexRT[Btn8U] == 1 && i == 0) { // forward short
+			forward();
     }
-    else if (vexRT[Btn8D] == 1 && i == 0) { // backwards short
-    	motor[rightMotor] = -40;
-    	motor [leftMotor] = -40;
-    	wait1Msec(700);
-			motor[rightMotor] = 0;
-    	motor [leftMotor] = 0;
+    else if (vexRT[Btn8D] == 1 && i == 0) { // backward short
+			reverse();
  		}
  		else if (vexRT[Btn8R] == 1 && i == 0) { // right short
-    	motor[rightMotor] = -40;
-    	motor [leftMotor] = 40;
-    	wait1Msec(1000);
-			motor[rightMotor] = 0;
-    	motor [leftMotor] = 0;
+ 			turnright90();
  		}
  		else if (vexRT[Btn8L] == 1 && i == 0) { // left short
-    	motor[rightMotor] = 40;
-    	motor [leftMotor] = -40;
-    	wait1Msec(1000);
-			motor[rightMotor] = 0;
-    	motor [leftMotor] = 0;
+			turnleft90();
  		}
  		if (vexRT[Btn5U] == 1) {
   			i = 1;
@@ -91,39 +152,26 @@ task main ()
   	}
 
   	if (vexRT[Btn6D] == 1) {
-  		// forward
-  		motor[rightMotor] = 40;
-  		motor[leftMotor] = 40;
-  		wait1Msec(700);
-  		// turns right
-  		motor[rightMotor] = -30;
-  		motor[leftMotor] = 40;
-  		wait1Msec(300);
-  		// stops turning
-  		motor[rightMotor] = 0;
-  		motor[leftMotor] = 0;
-  		// opens claw
-  		motor (claw) = -30;
-  		wait1Msec(30);
-  		// drives forward in a short time
-  		motor[rightMotor] = 30;
-  		motor[leftMotor] = 30;
-  		wait1Msec(30);
-  		// stops driving in a short time
-  		motor[rightMotor] = 0;
-  		motor[leftMotor] = 0;
-  		wait1Msec(1);
-  		// closes claw
-  		motor[claw] = 30;
-  		wait1Msec(50);
+
+  		forward();
+  		forward();
+  		turnright90();
+  		openclaw();
+  		forward();
+  		closeclaw();
+  		liftclaw();
+  		reverse();
+  		turnleft90();
+  		forward();
+  		forward();
+  		lowerclaw();
+  		openclaw();
+
+  		//fullstop
+  		finish();
 
   	}
-    if (vexRT[Btn6U] == 1) {
-    	motor[rightMotor] = 0;
-    	motor [leftMotor] = 0;
- 		}
 
-  }
-
+	}
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
